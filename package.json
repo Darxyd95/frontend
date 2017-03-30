@@ -1,6 +1,7 @@
 {
   "name": "with-vuetify",
   "dependencies": {
+    "axios": "^0.15.3",
     "nuxt": "latest",
     "vue-cookie": "^1.1.3",
     "vue-websocket": "^0.2.2",
@@ -9,7 +10,7 @@
   },
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
+    "build": "NODE_ENV=production nuxt build",
     "start": "nuxt start"
   },
   "devDependencies": {

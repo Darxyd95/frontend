@@ -61,7 +61,7 @@
       }
     },
     mounted () {
-      fetch('/api/projects')
+      fetch(process.env.HOST_URL + '/api/projects')
       .then((response) => { return response.json() })
       .then((data) => {
         this.$store.commit('setProjectList', { projectList: data })
