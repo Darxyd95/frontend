@@ -3,7 +3,7 @@ const { join } = require('path')
 
 module.exports = {
   build: {
-    vendor: ['axios', 'socket.io-client', 'vuetify', 'vue-cookie', 'wenk']
+    vendor: ['axios', 'qrcode-js-package/qrcode.js', 'socket.io-client', 'vuetify', 'vue-cookie', 'wenk']
   },
   plugins: ['~plugins/vuetify.js', '~plugins/vue-cookie.js'],
   css: [
