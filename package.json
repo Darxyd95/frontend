@@ -2,6 +2,7 @@
   "name": "with-vuetify",
   "dependencies": {
     "axios": "^0.15.3",
+    "marked": "^0.3.6",
     "nuxt": "latest",
     "qrcode-js-package": "^1.0.4",
     "vue-cookie": "^1.1.3",

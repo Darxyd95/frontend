@@ -3,12 +3,13 @@ const { join } = require('path')
 
 module.exports = {
   build: {
-    vendor: ['axios', 'qrcode-js-package/qrcode.js', 'socket.io-client', 'vuetify', 'vue-cookie', 'wenk']
+    vendor: ['axios', 'marked', 'qrcode-js-package/qrcode.js', 'socket.io-client', 'vuetify', 'vue-cookie', 'wenk']
   },
   plugins: ['~plugins/vuetify.js', '~plugins/vue-cookie.js'],
   css: [
     { src: join(__dirname, 'css/app.styl'), lang: 'styl' }
   ],
+  cache: true,
   head: {
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto' },
