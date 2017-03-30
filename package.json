@@ -4,6 +4,7 @@
     "axios": "^0.15.3",
     "nuxt": "latest",
     "vue-cookie": "^1.1.3",
+    "vue-disqus": "^2.0.2",
     "vue-websocket": "^0.2.2",
     "vuetify": "^0.9.1",
     "wenk": "^1.0.5"
