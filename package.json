@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "nuxt",
     "build": "NODE_ENV=production nuxt build",
-    "start": "nuxt start"
+    "start": "nuxt start",
+    "generate": "nuxt generate"
   },
   "devDependencies": {
     "less": "^2.7.2",
