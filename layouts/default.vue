@@ -2,7 +2,6 @@
 <template>
   <v-app top-toolbar footer class="app">
     <v-toolbar class="grey darken-3">
-      <v-toolbar-side-icon class="hidden-md-and-up" @click.native.stop="sidebar = !sidebar" />
       <v-toolbar-items class="hidden-sm-and-down" v-for="item in items" :key="item.title">
         <v-toolbar-item :href="item.href" router>{{item.title}}</v-toolbar-item>
       </v-toolbar-items>
@@ -10,9 +9,7 @@
         <v-toolbar-item class="hidden-sm-and-down" href="https://blog.ethereum.network/latest">Blog</v-toolbar-item>
       </v-toolbar-items>
       <v-spacer></v-spacer>
-      <div class="searchfield">
-        <v-text-field v-if="this.$route.path === '/projects'" label="filter projects" v-model="searchField"></v-text-field>
-      </div>
+      <v-toolbar-side-icon class="hidden-md-and-up" @click.native.stop="sidebar = !sidebar" />
     </v-toolbar>
     <main>
       <v-sidebar drawer v-model="sidebar">
@@ -31,7 +28,7 @@
       </v-sidebar>
       <v-content>
         <v-container fluid class="px-2">
-          <nuxt v-bind:search-field="searchField"/>
+          <nuxt/>
         </v-container>
       </v-content>
     </main>
@@ -50,7 +47,6 @@
     data () {
       return {
         sidebar: false,
-        searchField: '',
         items: [
           {title: 'Home', href: '/'},
           {title: 'Learn', href: '/learn'},

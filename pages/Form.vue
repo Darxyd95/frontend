@@ -103,6 +103,7 @@
 
 <script>
   var marked = require('marked')
+  
   export default {
     name: 'projectForm',
     data () {

@@ -243,7 +243,6 @@
 
 <script>
 import VueDisqus from '~components/VueDisqus.vue'
-// import VueDisqus from 'vue-disqus/VueDisqus.vue'
 
 export default {
   name: 'learn',
